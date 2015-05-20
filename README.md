@@ -1,5 +1,7 @@
 # Задания зачёта
 
+[![Travis build][travis-badge]][travis-page]
+
 Каждое задание находится в отдельной папке.
 
 Структура файлов для каждого задания:
@@ -53,3 +55,6 @@ $ luarocks make --local
 
 Для зачёта нужно справиться хотя бы с одной задачей из
 каждой группы.
+
+[travis-page]: https://travis-ci.org/LuaAndC/credits
+[travis-badge]: https://travis-ci.org/LuaAndC/credits.png
