@@ -54,9 +54,21 @@ $ luarocks make --local
  2. Составить юнит-тесты на Lua.
     Названия начинаются с "lua-".
 
-Для зачёта нужно справиться хотя бы с одной задачей из
-каждой группы.
+Задачи c-distance и lua-distance даны для примера. К ним
+прилагается [моё решение][pull-dist]. Выбирать их для зачёта
+нельзя.
+
+## Зачёт
+
+Для зачёта нужно одновременно выполнить два условия:
+
+ * справиться хотя бы с одной задачей из каждой группы
+ * выполнить хотя бы одно из:
+  * сдать устную часть зачёта
+  * представить свой учебный проект (небольшой рассказ и код)
+  * сдать контрольную на 5
 
 [travis-page]: https://travis-ci.org/LuaAndC/credits
 [travis-badge]: https://travis-ci.org/LuaAndC/credits.png
 [travis-pulls]: https://travis-ci.org/LuaAndC/credits/pull_requests
+[pull-dist]: https://github.com/LuaAndC/credits/pull/1
