@@ -1,9 +1,9 @@
 describe("distance (unit test)", function()
-    pending("loads module", function()
+    it("loads module", function()
         local f = require 'distance.credit'
     end)
 
-    pending("accepts true solution", function()
+    it("accepts true solution", function()
         local f = require 'distance.credit'
         assert.has_no_error(function()
             f(function(A, B)
@@ -36,7 +36,7 @@ describe("distance (unit test)", function()
         end)
     end)
 
-    pending("accepts true solution 2", function()
+    it("accepts true solution 2", function()
         local f = require 'distance.credit'
         assert.has_no_error(function()
             f(function(A, B)
@@ -70,7 +70,7 @@ describe("distance (unit test)", function()
         end)
     end)
 
-    pending("throws on bad solutions", function()
+    it("throws on bad solutions", function()
         local f = require 'distance.credit'
         assert.has_error(function()
             f(function(A, B)
