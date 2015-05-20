@@ -1,4 +1,4 @@
-# Задания зачёта
+# Задания зачёта (в процессе...)
 
 [![Travis build][travis-badge]][travis-page]
 
