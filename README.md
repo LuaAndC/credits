@@ -43,6 +43,7 @@ $ luarocks make --local
  * запустить команду `busted ваша-задача/spec.lua`
  * убедиться, что все тесты пройдены и нет pending
  * создать пулл-реквест
+ * отслеживать статус решения на [Travis][travis-pulls]
 
 ## Задачи
 
@@ -58,3 +59,4 @@ $ luarocks make --local
 
 [travis-page]: https://travis-ci.org/LuaAndC/credits
 [travis-badge]: https://travis-ci.org/LuaAndC/credits.png
+[travis-pulls]: https://travis-ci.org/LuaAndC/credits/pull_requests
