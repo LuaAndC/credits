@@ -16,5 +16,6 @@ build = {
     modules = {
         ['distance'] = 'c-distance/credit.c',
         ['distance.credit'] = 'lua-distance/credit.lua',
+        ['gaps'] = 'c-gaps/credit.c',
     },
 }
