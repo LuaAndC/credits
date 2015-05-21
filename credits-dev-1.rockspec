@@ -17,5 +17,6 @@ build = {
         ['distance'] = 'c-distance/credit.c',
         ['distance.credit'] = 'lua-distance/credit.lua',
         ['gaps'] = 'c-gaps/credit.c',
+        ['shuf.credit'] = 'lua-shuf/credit.lua',
     },
 }
