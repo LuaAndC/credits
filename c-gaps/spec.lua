@@ -4,18 +4,18 @@ describe("gaps (implementation)", function()
     end)
 
     pending("doesn't change good alignment", function()
-        local f = require 'distance'
+        local f = require 'gaps'
         assert.same({}, f({}))
         assert.same({''}, f({''}))
         assert.same({'', ''}, f({'', ''}))
         assert.same({'A'}, f({'A'}))
         assert.same({'A', 'A'}, f({'A', 'A'}))
         assert.same({'A', 'A', 'A'}, f({'A', 'A', 'A'}))
-        assert.same({'A-'}, f({'AA'}))
+        assert.same({'A'}, f({'A-'}))
     end)
 
     pending("removes gap columns", function()
-        local f = require 'distance'
+        local f = require 'gaps'
         assert.same({''}, f({'-'}))
         assert.same({'', ''}, f({'-', '-'}))
         assert.same({'', ''}, f({'--', '--'}))
@@ -32,7 +32,7 @@ describe("gaps (implementation)", function()
 
     pending("throws error if input is not table",
     function()
-        local f = require 'distance'
+        local f = require 'gaps'
         assert.has_error(function()
             f('A')
         end)
@@ -43,7 +43,7 @@ describe("gaps (implementation)", function()
 
     pending("throws error if table members are not strings",
     function()
-        local f = require 'distance'
+        local f = require 'gaps'
         assert.has_error(function()
             f({{1,2,3}, {}})
         end)
@@ -51,7 +51,7 @@ describe("gaps (implementation)", function()
 
     pending("throws error if strings' lengths differ",
     function()
-        local f = require 'distance'
+        local f = require 'gaps'
         assert.has_error(function()
             f({'AAA', 'AA'})
         end)
