@@ -1,12 +1,12 @@
 describe("distance (unit test)", function()
     pending("loads module", function()
-        local f = require 'distance.credit'
+        local g = require 'distance.credit'
     end)
 
     pending("accepts true solution", function()
-        local f = require 'distance.credit'
+        local g = require 'distance.credit'
         assert.has_no_error(function()
-            f(function(A, B)
+            g(function(A, B)
                 assert(type(A) == 'string')
                 assert(type(B) == 'string')
                 assert(#A == #B)
@@ -37,9 +37,9 @@ describe("distance (unit test)", function()
     end)
 
     pending("accepts true solution 2", function()
-        local f = require 'distance.credit'
+        local g = require 'distance.credit'
         assert.has_no_error(function()
-            f(function(A, B)
+            g(function(A, B)
                 assert(type(A) == 'string')
                 assert(type(B) == 'string')
                 assert(#A == #B)
@@ -71,9 +71,9 @@ describe("distance (unit test)", function()
     end)
 
     pending("throws on bad solutions", function()
-        local f = require 'distance.credit'
+        local g = require 'distance.credit'
         assert.has_error(function()
-            f(function(A, B)
+            g(function(A, B)
                 assert(type(A) == 'string')
                 assert(type(B) == 'string')
                 assert(#A == #B)
@@ -101,7 +101,7 @@ describe("distance (unit test)", function()
         end)
 
         assert.has_error(function()
-            f(function(A, B)
+            g(function(A, B)
                 assert(type(A) == 'string')
                 assert(type(B) == 'string')
                 assert(#A == #B)
