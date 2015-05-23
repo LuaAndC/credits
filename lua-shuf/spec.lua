@@ -31,7 +31,7 @@ local function shufRangeBad2(n)
         local pos = math.random(1, n - i + 1)
         result[i] = table.remove(range, pos)
     end
-    result.test = test
+    result.test = 'test'
     return result
 end
 
