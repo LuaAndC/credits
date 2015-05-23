@@ -19,16 +19,23 @@ local function g(f)
 	assert(sum == n)
 
 	local len = 0
-	for k, y in ipairs(result) do
+	for k, y in pairs(result) do
 		len = len + 1
 	end
 
 	assert(len == n) 
 	assert(f(0) == {})
 	
-	assert(pcall(f('hjhg')))
-	assert(pcall(f('1')))
-	assert(pcall(f(1)))
+
+	assert(not pcall(function()
+		f('sdads')
+	end))
+	assert(not pcall(function()
+		f('1')
+	end))
+	assert(not pcall(function()
+		f({0})
+	end))
 end
 
 return g
