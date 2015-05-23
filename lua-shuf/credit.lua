@@ -2,7 +2,7 @@ local function g(f)
 	local n = 1000
 	local occurense = {}
 	for i = 1, n do
-		n[i] = 0
+		occurense[i] = 0
 	end
 	local result = f(n)
 
@@ -24,14 +24,12 @@ local function g(f)
 	end
 
 	assert(len == n) 
-	assert(f(0) == {})
-	
 
 	assert(not pcall(function()
 		f('sdads')
 	end))
 	assert(not pcall(function()
-		f('1')
+		f('1ddd')
 	end))
 	assert(not pcall(function()
 		f({0})
