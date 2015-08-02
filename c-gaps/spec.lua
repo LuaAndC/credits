@@ -1,9 +1,9 @@
 describe("gaps (implementation)", function()
-    pending("loads module", function()
+    it("loads module", function()
         local f = require 'gaps'
     end)
 
-    pending("doesn't change good alignment", function()
+    it("doesn't change good alignment", function()
         local f = require 'gaps'
         assert.same({}, f({}))
         assert.same({''}, f({''}))
@@ -14,7 +14,7 @@ describe("gaps (implementation)", function()
         assert.same({'A'}, f({'A-'}))
     end)
 
-    pending("removes gap columns", function()
+    it("removes gap columns", function()
         local f = require 'gaps'
         assert.same({''}, f({'-'}))
         assert.same({'', ''}, f({'-', '-'}))
@@ -30,7 +30,7 @@ describe("gaps (implementation)", function()
         }))
     end)
 
-    pending("throws error if input is not table",
+    it("throws error if input is not table",
     function()
         local f = require 'gaps'
         assert.has_error(function()
@@ -41,7 +41,7 @@ describe("gaps (implementation)", function()
         end)
     end)
 
-    pending("throws error if table members are not strings",
+    it("throws error if table members are not strings",
     function()
         local f = require 'gaps'
         assert.has_error(function()
@@ -49,7 +49,7 @@ describe("gaps (implementation)", function()
         end)
     end)
 
-    pending("throws error if strings' lengths differ",
+    it("throws error if strings' lengths differ",
     function()
         local f = require 'gaps'
         assert.has_error(function()
