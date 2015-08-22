@@ -40,32 +40,32 @@ local function shufRangeBad3(n)
 end
 
 describe("shuf (unit test)", function()
-    pending("loads module", function()
+    it("loads module", function()
         local g = require 'shuf.credit'
     end)
 
-    pending("accepts good shufRange", function()
+    it("accepts good shufRange", function()
         local g = require 'shuf.credit'
         assert.has_no_error(function()
             g(shufRange)
         end)
     end)
 
-    pending("don't accept bad shufRangeBad", function()
+    it("don't accept bad shufRangeBad", function()
         local g = require 'shuf.credit'
         assert.has_error(function()
             g(shufRangeBad)
         end)
     end)
 
-    pending("don't accept bad shufRangeBad2", function()
+    it("don't accept bad shufRangeBad2", function()
         local g = require 'shuf.credit'
         assert.has_error(function()
             g(shufRangeBad2)
         end)
     end)
 
-    pending("don't accept bad shufRangeBad3", function()
+    it("don't accept bad shufRangeBad3", function()
         local g = require 'shuf.credit'
         assert.has_error(function()
             g(shufRangeBad3)
